@@ -33,7 +33,7 @@ def webhook():
         return "Success"
     
 def send_fb_message(to, message):
-    post_message_url = 'https://graph.facebook.com/v10.0/me/messages?access_token={token}'.format(token="這裡要放自己的Token")
+    post_message_url = 'https://graph.facebook.com/v10.0/me/messages?access_token={token}'.format(token="這裡要放自己的Token123")
     response_message = json.dumps({"messaging_type":"RESPONSE",
                                     "recipient":{"id": to}, 
                                    "message":{"text":message}})
